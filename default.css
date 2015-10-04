@@ -1,1 +1,129 @@
 @charset "utf-8";
+
+/* HTML reset */
+body{margin:0;}
+
+/* font */
+@font-face {
+	font-family: NG;
+	font-style: normal;
+	font-weight: 400;
+	src: url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+	src: url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+		url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+		url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+		url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+body, table, input, textarea, select{
+	font-family: NG, sans-serif;
+	font-size: 14px;
+}
+
+/* layout */
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.skip{
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+.skip:focus{
+	height: auto;
+	text-align: center;
+	padding: 8px 0;
+	background: #666;
+	color: #fff;
+}
+.sr{
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+}
+
+/* header */
+.header>h1{
+	font-size: 32px;
+	margin: 20px 0;
+	color: #666;
+	text-shadow: 1px 1px 0 #ddd;
+}
+
+/* gnb */
+.gnb{ 
+	position: relative;
+	height: 80px;
+	margin: 0 0 20px 0;
+}
+.gnb a{text-decoration: none;}
+.gnb ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.gnb>ul{ background: #777;}
+.gnb>ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.gnb>ul>li{
+	float: left;
+	margin-right: 1px;
+}
+.gnb>ul>li>a{
+	display: block;
+	padding: 0 30px;
+	line-height: 40px;
+	background: #666;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+.gnb>ul>li>a:hover,
+.gnb>ul>li>a:focus,
+.gnb>ul>.active>a{ background: #333;}
+.gnb-sub{
+	position: absolute;
+	display: none;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+.active>.gnb-sub{
+	display: block;
+	width: 100%;
+	background: #333;
+	left: 0;
+	top: 40px;
+}
+.gnb-sub>li{
+	float: left;
+}
+.gnb-sub>li>a{
+	color: #fff;
+	display: block;
+	line-height: 40px;
+	padding: 0 20px;
+}
+
+
+
+
+
+
+
+
