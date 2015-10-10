@@ -120,6 +120,34 @@ body, table, input, textarea, select{
 	padding: 0 20px;
 }
 
+/* .body */
+.body:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.lnb{
+	float: left;
+	width: 200px;
+}
+main{
+	float: right;
+	width: 740px;
+}
+.footer{
+	border-top: 1px solid #ccc;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
